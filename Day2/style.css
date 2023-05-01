@@ -1,0 +1,57 @@
+div {
+  width: 20px;
+  height: 20px;
+  background-color: skyblue;
+  text-align: center;
+  border: 1px solid black;
+
+  margin-bottom: 1px;
+  padding: 10px;
+}
+span {
+  background-color: skyblue;
+  margin-right: 10px;
+}
+/* p {
+  background-color: yellow;
+  border: 3px solid red;
+} */
+p {
+  border: 5px solid red;
+  background: yellow;
+}
+.box1 {
+  padding: 20px;
+}
+.box2 {
+  padding: 20px 50px;
+}
+.box3 {
+  padding: 20px 50px 30px;
+}
+.box4 {
+  padding: 20px 30px 50px 70px;
+}
+
+/* .main {
+  color: hotpink;
+}
+.sub {
+  color: deepskyblue;
+}
+#useless {
+  font-size: 30px;
+  font-weight: 550;
+  color: red;
+} */
+/* li.key {
+  color: blue;
+}
+ul li {
+  font-style: italic;
+}
+
+ li 중에 마우스를 올리면 배경색 보여주기 
+li:hover {
+  background-color: khaki;
+} */
