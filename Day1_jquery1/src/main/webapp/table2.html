@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" src="./js/table2.js"></script>
+<body>
+	<div id="wrap">
+		<h2>게시글 작성</h2>
+		<form action="?">
+			
+			<table>
+				<tr>
+					<th>제목 *</th>
+					<td><input type="text" name="title"></td>
+				</tr>
+				<tr>
+					<th>아이디 *</th>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<th>비밀번호 *</th>
+					<td><input type="password" name="pass"></td>
+				</tr>
+				<tr>
+					<th>내용</th>
+					<td><textarea cols="80" rows="15" name="content"></textarea></td>
+				</tr>
+			</table>
+			<input class="btn" type="button" value="등록" onclick="enroll()">
+			<input class="btn" type="button" value="초기화" onclick="canceld()">
+			<input class="btn" type="button" value="취소" onclick="reset()">
+		</form>
+	</div>
+	<div id="wrap2">
+		<h3>게시글리스트</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>글번호</th>
+					<th>제목</th>
+					<th>작성자</th>
+					<th>작성일</th>
+					<th>조회수</th>
+				</tr>
+			</thead>
+			<tbody class="tbody">
+
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
