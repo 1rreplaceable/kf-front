@@ -1,0 +1,63 @@
+<!-- 
+웹페이지에서 효과를 손쉽게 적용할 수 있게 다양한 메서드 제공
+	<br> .hide() 숨기기
+	<br> .show() 보여주기
+	<br>
+
+	<h1>요소의 숨김 표시</h1>
+	<button id="togglebtn">요소표시</button>
+
+	<p>css의 display속이 none으로 설정되어 있기 때문에 웹페이지의 레이아웃에서 아예 사라져 버려요</p> 
+
+	<p>요소 표시 토글 선택한 요소가 어떤 상태인지(현재 상태를 보고 다른 동작을 실행한다.) 선택한 요소가 현재 사라진
+		상태라면 show() 동작 나타나 있는 상태에서 선택하면 hide() 동작
+	<p id="text">이 단락을 숨기거나 나타나게한다.</p>
+
+$(()=> {
+		$("#showbtn").on("click",()=>{
+			$("#text").show("fast");
+		});
+		$("#hidebtn").on("click",()=>{
+			$("#text").hide("fast");
+		});
+		
+		$(()=> {
+		$("#togglebtn").on("click",()=>{
+			$("#text").toggle("slow");
+		});
+	})
+	}) -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이펙트</title>
+<style>
+#divBox {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border: 5px solid orange;
+	margin-top: 20px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+<script>
+	$(function() {
+		$("#fadeInBtn").on("click", function() {
+			$("#divBox").fadeIn(); // id가 "divBox"인 요소를 점점 나타나게 함.
+		});
+		$("#fadeOutBtn").on("click", function() {
+			$("#divBox").fadeOut(); // id가 "divBox"인 요소를 점점 사라지게 함.
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>페이드 인과 페이드 아웃</h1>
+	<button id="fadeInBtn">페이드 인</button>
+	<button id="fadeOutBtn">페이드 아웃</button>
+	<div id="divBox"></div>
+	<p>제이쿼리에서 페이드 효과는 CSS opacity 속성값을 빠르게 변경하여 표현해요!</p>
+</body>
+</html>
