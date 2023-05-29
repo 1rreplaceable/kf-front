@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container .item {
+        border: 3px solid black;
+      }
+      .container .item:nth-child(1) {
+        grid-area: header;
+      }
+      .container .item:nth-child(2) {
+        grid-area: main;
+      }
+      .container .item:nth-child(3) {
+        grid-area: aside;
+      }
+      .container .item:nth-child(4) {
+        grid-area: footer;
+      }
+
+      footer {
+        margin-bottom: 20px;
+        grid-template-rows: repeat(6, 100px);
+        display: grid;
+        grid-template-areas: "header main main aside aside2 aside3";
+
+        /* 갭을 이용해서 간격을 설정 */
+        gap: 10px 10px;
+
+        position: absolute;
+        bottom: 0;
+        width: 98%;
+        height: 200px;
+        background-color: rgb(25, 25, 25);
+        color: white;
+      }
+      footer .item:nth-child(1) {
+        grid-area: header;
+      }
+      footer .item:nth-child(2) {
+        grid-area: main;
+      }
+      footer .item:nth-child(3) {
+        grid-area: aside;
+      }
+      footer .item:nth-child(4) {
+        grid-area: aside2;
+      }
+      footer .item:nth-child(5) {
+        grid-area: aside3;
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="item copy">
+        <div>Copyright@</div>
+        <div>홍길동(Hong gil dong)</div>
+      </div>
+      <div class="item repre">
+        <div>대표자 소개</div>
+        <div>
+          저는 날로 먹는 코딩의 대표 홍길동 입니다. 부트스트랩을 <br />
+          사용해서 웹 디자인을 하고 있습니다.
+        </div>
+      </div>
+      <div class="item navigation">
+        <div>네비게이션</div>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">소개</li>
+            <li class="list-group-item">강사진</li>
+            <li class="list-group-item">강의</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item sns">
+        <div>SNS</div>
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item">페이스북</li>
+            <li class="list-group-item">유투브</li>
+            <li class="list-group-item">아프리카TV</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item check">
+        <div>by 홍길동</div>
+      </div>
+    </footer>
+  </body>
+</html>

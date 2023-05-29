@@ -1,0 +1,94 @@
+.order_goods {
+  border: 1px solid rgb(160, 160, 160);
+  width: 540px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.order_info {
+  border: 1px solid rgb(160, 160, 160);
+  width: 540px;
+  padding: 10px;
+  text-align: center;
+}
+.order_main {
+  margin-top: 100px;
+  margin-left: 50px;
+  align-items: center;
+
+  font-weight: 550;
+}
+input {
+  width: 300px;
+  height: 30px;
+  margin: 10px 0px;
+  border: 1px solid #000;
+  border-radius: 7px;
+  opacity: 0.6;
+}
+.order_btn {
+  width: 560px;
+  margin-top: 30px;
+  height: 60px;
+  font-weight: 600;
+}
+table {
+  border: 1px solid rgb(160, 160, 160);
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.ctr {
+  text-align: center;
+}
+.table_header {
+  height: 40px;
+}
+.order_table {
+  margin-top: 160px;
+  margin-left: 50px;
+}
+
+.tr1,
+.tr2 {
+  background-color: rgb(240, 251, 255);
+}
+td input {
+  width: 60px;
+  height: 20px;
+  border-radius: 0;
+  margin: 8px 3px;
+  background-color: gainsboro;
+}
+.sizeup {
+  width: 240px;
+}
+.blue_btn {
+  background-color: rgb(196, 233, 253);
+  box-shadow: 2px 2px rgb(105, 169, 252);
+}
+.yellow_btn {
+  background-color: yellow;
+  box-shadow: 2px 2px orange;
+}
+.green_btn {
+  background-color: rgb(158, 253, 158);
+  box-shadow: 2px 2px rgb(123, 233, 182);
+}
+.red_btn {
+  background-color: rgb(255, 121, 121);
+  box-shadow: 2px 2px rgb(245, 32, 32);
+}
+td button {
+  height: 26px;
+  margin: 0px 3px;
+  border: none;
+}
+.mi {
+  height: 45px;
+}
+.skin {
+  width: 80px;
+}
+.blue_main {
+  color: skyblue;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>checkbox</title>
+    <link rel="stylesheet" href="getForm.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Practice1</h1>
+      <form name="testForm">
+        <fieldset>
+          <!-- 
+                라디오 버튼, 체크박스 선택된 항목을 checked 추가하기
+                checked = true 상태랑 똑같다.
+
+                문서에서 쿼리셀렉트 할 때("input[name='subject']:checked")
+
+                체크버튼
+                querySelectorAll("input[name='mailing']:checked")
+             -->
+
+          <legend>취미</legend>
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="all"
+              value="전체선택"
+            />전체선택</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="종합"
+            />종합</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="소설"
+            />소설</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="시/에세이"
+            />시/에세이</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="경제/경영"
+            />경제/경영</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="자기계발"
+            />자기계발</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="아동"
+            />아동</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="여행"
+            />여행</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="과학"
+            />과학</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="역사/문화"
+            />역사/문화</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="외국어"
+            />외국어</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="컴퓨터"
+            />컴퓨터</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="all"
+              id="new"
+              value="만화"
+            />만화</label
+          >
+        </fieldset>
+      </form>
+      <button id="send">카테고리 선택</button>
+      <div class="textarea"></div>
+    </div>
+
+    <script src="getForm.js"></script>
+  </body>
+</html>

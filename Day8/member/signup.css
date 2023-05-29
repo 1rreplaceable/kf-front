@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+}
+.side_bar {
+  float: left;
+}
+.side_bar h2 {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: rgb(92, 92, 92);
+}
+.side_bar_btn {
+  display: flex;
+  flex-direction: column;
+}
+.side_bar_btn button {
+  width: 290px;
+  height: 40px;
+  background-color: rgb(135, 0, 58);
+  border: 1px solid gray;
+  font-size: 14px;
+  color: white;
+}
+#school_img {
+  width: 100%;
+  height: 200px;
+}
+
+main {
+  margin-top: 40px;
+  margin-left: 420px;
+  color: rgb(92, 92, 92);
+}
+.signup_title {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.main_id {
+  margin: 15px 0px;
+  margin-left: 16px;
+}
+
+main input {
+  width: 300px;
+  height: 22px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.signup_name input {
+  margin-left: 55px;
+}
+.signup_id input {
+  margin-left: 40px;
+}
+.signup_pw input {
+  margin-left: 24px;
+}
+.signup_phnum input {
+  margin-left: 24px;
+}
+main button {
+  width: 415px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: rgb(135, 0, 58);
+  color: white;
+  border: 1px solid gray;
+}

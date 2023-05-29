@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상선택자1</title>
+    <style>
+      /* : 이 가상 클래스 선택자이다 */
+      /* hover : 선택자에 마우스 포인터가 올라가 있는 동안에 */
+      a:hover {
+        color: yellowgreen;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        transition-duration: 1s;
+        /* 애니메이션 실행시간 단위는 초 단위 */
+      }
+      .box1:hover {
+        width: 200px;
+        background-color: blue;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        transition-duration: 1s;
+      }
+      /* active: 선택자를 마우스로 누르고 있는 동안에만 선택된다. */
+      .box2:active {
+        width: 200px;
+        background-color: skyblue;
+      }
+      /* focus : 포커스가 된 동안에만 선택된다. */
+      input {
+        width: 100px;
+        background-color: hotpink;
+        outline: none; /*input 외곽선*/
+        border: 3px solid red;
+        padding: 5px 10px;
+        transition-duration: 1s;
+      }
+      input:focus {
+        width: 200px;
+        background-color: yellow;
+        border: 5px solid blue;
+      }
+      /* first-child : 선택자가 형제 요소 중 첫번 째 요소라면 선택 */
+      .fruits :first-child {
+        color: red;
+      }
+      /* last-child : 선택자가 형제 요소 중 마지막 요소라면 선택 */
+      .fruits :last-child {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.google.co.kr/?hl=ko">Google</a>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <input type="text" />
+
+    <ul class="fruits">
+      <li>딸기</li>
+      <li>사과</li>
+      <li>오렌지</li>
+      <li>망고</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>속성선택자</title>
+    <style>
+      /* 속성선택자?
+        태그 내에 특정 속성에 값을 가지고 있는 html 요소를 선택한다.
+        [속성이름]: []안에 지정한 속성이 설정된 요소를 선택한다.
+        */
+      [disabled] {
+        opacity: 0.2;
+        /* 투명도 기본값은 1, 숫자를 0으로 보낼 수록 투명해짐 */
+      }
+      [type="password"] {
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      [class^="btn"] {
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      [class$="success"] {
+        color: orange;
+      }
+      [class$="danger"] {
+        color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" value="홍길동" />
+    <input type="password" value="1234" />
+    <input type="text" value="disable 텍스트" disabled="disabled" />
+    <br /><br />
+
+    <button class="btn-success">Success</button
+    ><button class="btn-danger">Danger</button
+    ><button class="button">Normal</button>
+  </body>
+</html>
